@@ -19,8 +19,6 @@ import { LoginComponent } from './login/login.component';
   declarations: [
     AppComponent,
     NavComponent,
-    AboutComponent,
-    ContactComponent,
     HomeComponent,
     LogoutComponent,
     ProfileComponent,
