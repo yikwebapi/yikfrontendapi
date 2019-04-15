@@ -1,0 +1,29 @@
+<table class='class1'>
+<tr>
+  <th colspan='2'><img src= "assets/{{ image}}.png"></th>
+</tr>
+<tr><th>Name</th><th> {{name}}</th></tr>
+<tr><th>type</th><th> {{type}}</th></tr>
+<tr><th>price</th><th> {{price}}</th></tr>
+<tr><th>description</th><th> {{description}}</th></tr>
+
+</table><br>
+
+
+<button (click)="AddToCart()">Add to Cart</button>
+
+
+<ul *ngIf="Comments">
+  <li *ngFor="let comment of Comments">
+  <h3>Name : {{ comment.account }} </h3>
+  <p>Comment : {{ comment.comment}} </p>
+  </li>
+ </ul>
+
+
+
+
+ <textarea cols="30" rows="4" (input)="str = $event.target.value"></textarea><br>
+<button (click)="AddComment()">Add</button><a>|||</a>
+<button (click)="UpdateComment()">Update</button><a>|||</a>
+<button (click)="DeleteComment()">Delete Your comment</button>

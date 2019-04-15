@@ -1,0 +1,26 @@
+<button (click)="DeleteAllCart()">Remove All Cart Item </button> 
+<table class="table1" *ngIf="games">
+
+    <thead>
+    <tr>
+      <th scope="col" >Image</th>
+      <th scope="col" >name</th>
+      <th scope="col" >price</th>
+      <th scope="col" >type</th>
+    </tr>
+
+  </thead>
+
+
+
+  <thead *ngFor="let game of games">
+    <tr>
+      <th scope="col" ><img src= "assets/{{ game.image}}.png"></th>
+      <th scope="col" >{{game.name}}</th>
+      <th scope="col" >{{game.price}}</th>
+      <th scope="col" >{{game.type}}</th>
+    </tr>
+  </thead>
+
+  
+  </table>

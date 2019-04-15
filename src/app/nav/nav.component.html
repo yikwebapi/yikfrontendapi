@@ -1,0 +1,16 @@
+<header>
+  <div class="container">
+    <a routerLink="/">{{ appTitle }}</a>
+  <nav>
+  <ul>
+  <li><a routerLink="/">Home</a></li>
+  <li *ngIf="name===''"><a routerLink="/login">Login</a></li>
+  <li *ngIf="name===''"><a routerLink="/register">Register</a></li>
+  <li *ngIf="name!==''"><a routerLink="/logout">Logout</a></li>
+  <li *ngIf="name!==''"><a routerLink="/profile">Profile</a></li>
+  <li *ngIf="name!==''"><a routerLink="/addgame">Add Game</a></li>
+  <li *ngIf="name!==''"><a routerLink="/cart">View Cart</a></li>
+  </ul>
+  </nav>
+  </div>
+ </header>

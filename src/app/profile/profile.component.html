@@ -1,0 +1,48 @@
+<table class='class1'>
+<tr>
+    <th>Account </th><th>{{ Account }}</th>
+</tr>
+<tr>
+        <th>Name </th><th>{{ name }}</th>
+    </tr>
+    <tr>
+            <th>Address </th><th>{{ address }}</th>
+        </tr>
+        <tr>
+                <th>Phone </th><th>{{ phone }}</th>
+            </tr>
+
+</table>
+<br><br><br>
+
+<label> Update Profile Data: </label><br>
+<form [formGroup]="ProfileForm" (ngSubmit)="onSubmit()">
+   
+           <label> name:
+               <input type="text" formControlName="name">
+               <div *ngIf="submitted &&
+              ProfileForm.controls.name.errors" class="error">
+             
+               </div>
+               </label>
+   
+               <label> address:
+                   <input type="text" formControlName="address">
+                   <div *ngIf="submitted &&
+                  ProfileForm.controls.address.errors" class="error">
+                  
+                   </div>
+                   </label>
+   
+   
+                   <label> phone:
+                       <input type="text" formControlName="phone">
+                       <div *ngIf="submitted &&
+                      ProfileForm.controls.phone.errors" class="error">
+                       
+                       </div>
+                       </label>
+   
+    <input type="submit" value="Update" class="cta">
+   
+    </form>

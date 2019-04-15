@@ -1,0 +1,23 @@
+<h1>Games</h1>
+<form [formGroup]="searchGameForm" (ngSubmit)="onSubmit()">
+
+<label>Type: <select  (change)="onChange($event.target.value)" > <option *ngFor="let item of items" [ngValue]="item" [selected]="selectedItem.name === item.name">{{item.name}}</option>
+</select></label>
+<input type="submit" value="Search" class="cta">
+</form>
+<br><h1 color='red'>Click the image can go to Game Detail Page (Must be logined)</h1>
+
+
+<div *ngIf="games">
+    <div class='gg' *ngFor="let game of games">
+<table class='class1'>
+  <tr>
+      <th rowspan='2'> <a  (click)="onClickYeah(game.GameId)"><img src= "assets/{{ game.image}}.png"></a></th>
+    <th> Name </th><th> {{ game.name }}</th>
+  <tr>
+        <th> Type </th><th> {{ game.type }}</th>
+      </tr>
+    </table>
+    
+    </div>
+</div>
