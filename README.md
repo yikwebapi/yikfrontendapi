@@ -45,7 +45,7 @@ Please change the below code:
 
 **First ,start the backend web api server (Download backend api server and according to the installation and start it)**
 
-**Second, change the frontend -> yikfrontendapi-master/src/data.service.ts 
+**Second, change the frontend -> yikfrontendapi-master/src/data.service.ts**
 
 **Select All https://limitless-hamlet-43645.herokuapp.com to your current path, 127.0.0.1/localhost**
 
