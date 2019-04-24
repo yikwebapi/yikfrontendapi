@@ -27,9 +27,9 @@ Reminder & limitation:
 
 2. open VS Code -> File -> open folder -> yikfrontendapi_master
 
-3. Open terminal -> **npm install --production**
+3. Open terminal -> **npm install**
 
-4.  terminal -> **npm install --save-dev @angular-devkit/build-angular**
+4.
 
 5. terminal -> **ng serve -o**
 
